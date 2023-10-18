@@ -1,0 +1,182 @@
+/* h1 {
+    color: , hsl(225, 100%, 98%), 
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(224, 232, 255);
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenido-wave {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 25%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__title {
+    color: rgb(31, 47, 86);
+    font-weight: 900;
+    margin: 30px 0 0 0;
+}
+
+.card__text {
+    width: 80%;
+    color:  rgb(114, 128, 167);
+    text-align: center;
+}
+
+.plan-music {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    width: 75%;
+    background-color: rgb(245, 247, 255);
+}
+
+.container-plan {
+    display: flex;
+}
+
+.plan-music__icon {
+    margin-right: 15px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-music__text {
+    color: rgb(31, 47, 86);
+    font-weight: 900;
+    margin: 0;
+}
+
+.plan-music__price {
+    color:  rgb(114, 128, 167);
+    margin: 0;
+}
+
+.plan-music__change {
+    color: rgb(56, 41, 224);
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color 0.2s linear;
+}
+
+.plan-music__change:hover {
+    text-decoration: none;
+    color: rgba(82, 69, 226, 0.815);
+}
+
+.card__btn-pay {
+    width: 83%;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 10px 0;
+    background-color: rgb(56, 41, 224);
+    box-shadow: 0 15px 15px rgba(56, 41, 224, 0.26);
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.card__btn-pay:hover {
+    background-color: rgba(82, 69, 226, 0.815);
+}
+
+.card__btn-cancel {
+    color: rgb(114, 128, 167);
+    font-weight: 900;
+    width: 83%;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+
+.card__btn-cancel:hover {
+    color: rgb(31, 47, 86);
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenido {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+    .card {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contenido {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+    .card {
+        width: 95%;
+    }
+
+    .plan-music {
+        display: block;
+    }
+
+    .container-plan {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .plan-music__change {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
